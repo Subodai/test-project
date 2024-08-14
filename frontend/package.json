@@ -1,16 +1,16 @@
 {
   "name": "frontend",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "echo \"Running tests for version $npm_package_version...\"",
+    "test": "echo \"Running tests\"",
     "preversion": "yarn test",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
+    "postversion": "git push --tags && git push && echo \"Successfully Pushed tags to git\""
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
